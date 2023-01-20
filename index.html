@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Hello Vue!</title>
+    </head>
+    <body>
+        <div id="app">
+
+            <h1 :class="textCss" class="margin-40">
+                {{message}} 
+                <br>
+                {{anotherText}}
+            </h1>
+
+            <img :src="niceImgHere" :alt="anotherText" :class="margin40">
+
+            <div>
+                <span><a href="https://i.redd.it/0qa4bqhcmuca1.png"></a></span>
+            </div>
+            
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
